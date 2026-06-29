@@ -46,6 +46,10 @@ INSTALLED_APPS = [
 REST_FRAMEWORK = {
     # YOUR SETTINGS
     'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',
+
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework_simplejwt.authentication.JWTAuthentication',
+    ),
 }
 
 MIDDLEWARE = [
@@ -86,14 +90,14 @@ DATABASES = {
     #     'ENGINE': 'django.db.backends.sqlite3',
     #     'NAME': BASE_DIR / 'db.sqlite3',
     # }
-# vadil58175@disiok.com
-# vadil58175@disiok.comQ
+# xiyisa5164@fishnone.com
+# xiyisa5164@fishnone.comQ
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'HOST': 'ep-aged-rice-ahbnlxlg-pooler.c-3.us-east-1.aws.neon.tech',
+        'HOST': 'ep-nameless-dawn-atycqfxi-pooler.c-9.us-east-1.aws.neon.tech',
         'NAME': 'neondb',
         'USER': 'neondb_owner',
-        'PASSWORD': 'npg_nxw3stBm6pPb',
+        'PASSWORD': 'npg_np9jxGNI5sou',
         'PORT': '5432'
     }
 }

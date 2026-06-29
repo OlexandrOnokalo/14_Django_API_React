@@ -39,5 +39,21 @@ py manage.py runserver 4099
 pip install djangorestframework
 pip install drf-spectacular
 pip install django-cors-headers
+pip install djangorestframework_simplejwt
+```
+
+## Clone Project
+```
+git clone https://github.com/novakvova/Python-PD411.git
+cd Python-PD411
+cd api
+py -m venv .venv
+.venv\Scripts\activate.bat
+
+python.exe -m pip install --upgrade pip
+pip install -r requirements.txt
+cd atbapi
+py manage.py migrate
+py manage.py runserver 4099
 ```
 
